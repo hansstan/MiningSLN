@@ -1,0 +1,43 @@
+﻿<Window x:Class="MiningClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MiningClient"
+        mc:Ignorable="d"
+        Title="Mining Client" Height="550" Width="525" 
+        Loaded="Window_Loaded"
+        Closing="Window_Closing">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="40" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,10,0,0">
+            <TextBlock Text="Mining Web App Url:" Width="150"/>
+            <TextBlock Name="lblWebAppUrl" Text="" FontWeight="Bold"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <TextBlock Text="Mining Center Web App Url:" Width="150"/>
+            <TextBlock Name="lblMiningCenterWebAppUrl" Text="" FontWeight="Bold"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+            <TextBlock Text="Number of Workerthreads: " Width="150"/>
+            <TextBox Name="txtCount" Text="5" Width="30" HorizontalContentAlignment="Right"/>
+            <TextBlock Name="lblPingMsg" Margin="5,5,0,0" FontWeight="Bold" />
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal" Grid.Row="3">
+            <Button Name="btnStartMining" Click="btnStartMining_Click" Content="Start Mining" Width="150" />
+            <Button Name="btnStopMining" Click="btnStopMining_Click" Content="Stop Mining" Width="150" />
+        </StackPanel>
+        
+        <ListBox Name="lstStatus" Grid.Row="4" />
+    </Grid>
+</Window>

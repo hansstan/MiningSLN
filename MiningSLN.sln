@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiningWebApp", "MiningWebApp\MiningWebApp.csproj", "{59A1FF88-6214-41B3-A6D5-3466F3817744}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiningClient", "MiningClient\MiningClient.csproj", "{00BDACD0-8983-4E6B-BF4D-DF45458D90E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59A1FF88-6214-41B3-A6D5-3466F3817744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59A1FF88-6214-41B3-A6D5-3466F3817744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59A1FF88-6214-41B3-A6D5-3466F3817744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59A1FF88-6214-41B3-A6D5-3466F3817744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00BDACD0-8983-4E6B-BF4D-DF45458D90E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00BDACD0-8983-4E6B-BF4D-DF45458D90E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00BDACD0-8983-4E6B-BF4D-DF45458D90E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00BDACD0-8983-4E6B-BF4D-DF45458D90E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04E98211-2F91-4B2D-A3C0-14C6EB75B19D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04E98211-2F91-4B2D-A3C0-14C6EB75B19D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04E98211-2F91-4B2D-A3C0-14C6EB75B19D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04E98211-2F91-4B2D-A3C0-14C6EB75B19D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B8007AE-DD35-44F8-818E-B856241CB393}
+	EndGlobalSection
+EndGlobal
