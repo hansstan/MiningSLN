@@ -29,7 +29,7 @@
 
         <StackPanel Orientation="Horizontal" Grid.Row="2">
             <TextBlock Text="Number of Workerthreads: " Width="150"/>
-            <TextBox Name="txtCount" Text="5" Width="30" HorizontalContentAlignment="Right"/>
+            <TextBox Name="txtCount" Text="1" Width="30" HorizontalContentAlignment="Right"/>
             <TextBlock Name="lblPingMsg" Margin="5,5,0,0" FontWeight="Bold" />
         </StackPanel>
         
