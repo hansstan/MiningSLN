@@ -11,7 +11,7 @@ namespace MiningClient
         // =========================================================
         // TODO: Update with YOUR Azure WebSite Url!!!!
         // =========================================================
-        public static string MiningWebAppBaseUrl = "MiningWebApp";
+        public static string MiningWebAppBaseUrl = "MiningWebApp-Stanglmayr";
 
         ///z.B. "MiningWebApp-Meier"; // <<<==== Update ONLY THIS LINE No special chars like ÄÖÜ ....!!!
         // =========================================================
