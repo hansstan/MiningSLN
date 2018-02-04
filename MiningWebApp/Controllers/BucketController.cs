@@ -11,15 +11,15 @@ namespace MiningWebApp.Controllers
     public class BucketController : ApiController
     {
         // GET: api/Data
-        public Bucket Get()
+        public string Get()
         {
-            return new Bucket(); //
+            return "Not used";
         }
 
-        // GET: api/Data/5
-        public string Get(int id)
+        // GET: api/Bucket/1024
+        public Bucket Get(long id)
         {
-            return "value";
+            return new Bucket(id);
         }
 
         // POST: api/Data

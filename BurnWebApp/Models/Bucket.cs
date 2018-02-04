@@ -7,7 +7,17 @@ namespace BurnWebApp.Models
 {
     public class Bucket
     {
-        int    id;
-        byte[] Coal;
+        public int    id;
+        public byte[] Coal;
+
+        public Bucket(long bucketSize)
+        {
+            id = new Random(DateTime.Now.Millisecond).Next();
+            Coal = new byte[bucketSize];
+            for (int i = 0; i < bucketSize; i++)
+            {
+                Coal[i] = (byte)i;
+            }
+        }
     }
 }

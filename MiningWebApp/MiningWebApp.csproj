@@ -146,7 +146,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Connected Services\Application Insights\ConnectedService.json" />
-    <None Include="Properties\PublishProfiles\MiningWebApp - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\MiningWebApp-Stanglmayr - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
     <Content Include="MySoapService.asmx" />
     <Content Include="Scripts\jquery-1.6.4.js" />
