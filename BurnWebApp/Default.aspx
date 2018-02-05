@@ -43,6 +43,14 @@
                 </td>
             </tr>
             <tr>
+                <td>
+
+                </td>
+                <td>
+                    <asp:Button Text="Burn via WCF Service" runat="server" name="btnBurnViaWcfService" Width="150" OnClick="btnBurnViaWcfService_Click" />
+                </td>
+            </tr>
+            <tr>
                 <td></td>
                  <td>
                     <asp:Label Id="lblStatus" runat="server" />
