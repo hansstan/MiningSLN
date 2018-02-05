@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2026
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiningWebApp", "MiningWebApp\MiningWebApp.csproj", "{59A1FF88-6214-41B3-A6D5-3466F3817744}"
 EndProject
@@ -11,6 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiningClient", "MiningClien
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BurnWebApp", "BurnWebApp\BurnWebApp.csproj", "{C8216457-519A-4B9B-8407-2A93BEC18ECE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{59A1FF88-6214-41B3-A6D5-3466F3817744} = {59A1FF88-6214-41B3-A6D5-3466F3817744}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

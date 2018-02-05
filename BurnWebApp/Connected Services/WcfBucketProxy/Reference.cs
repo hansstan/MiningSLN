@@ -8,14 +8,14 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BurnWebApp.WcfProxy {
+namespace BurnWebApp.WcfBucketProxy {
     using System.Runtime.Serialization;
     using System;
     
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Bucket", Namespace="http://schemas.datacontract.org/2004/07/WCFServiceWebRole.Models")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Bucket", Namespace="http://schemas.datacontract.org/2004/07/BurnWebApp.Models")]
     [System.SerializableAttribute()]
     public partial class Bucket : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -75,62 +75,48 @@ namespace BurnWebApp.WcfProxy {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="WcfProxy.IBucketService")]
-    public interface IBucketService {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="WcfBucketProxy.IWcfBucketService")]
+    public interface IWcfBucketService {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBucketService/GetData", ReplyAction="http://tempuri.org/IBucketService/GetDataResponse")]
-        string GetData(int value);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWcfBucketService/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IWcfBucketService/GetDataUsingDataContractResponse")]
+        BurnWebApp.WcfBucketProxy.Bucket GetDataUsingDataContract(int size);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBucketService/GetData", ReplyAction="http://tempuri.org/IBucketService/GetDataResponse")]
-        System.Threading.Tasks.Task<string> GetDataAsync(int value);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBucketService/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IBucketService/GetDataUsingDataContractResponse")]
-        BurnWebApp.WcfProxy.Bucket GetDataUsingDataContract(int size);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IBucketService/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IBucketService/GetDataUsingDataContractResponse")]
-        System.Threading.Tasks.Task<BurnWebApp.WcfProxy.Bucket> GetDataUsingDataContractAsync(int size);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IWcfBucketService/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IWcfBucketService/GetDataUsingDataContractResponse")]
+        System.Threading.Tasks.Task<BurnWebApp.WcfBucketProxy.Bucket> GetDataUsingDataContractAsync(int size);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IBucketServiceChannel : BurnWebApp.WcfProxy.IBucketService, System.ServiceModel.IClientChannel {
+    public interface IWcfBucketServiceChannel : BurnWebApp.WcfBucketProxy.IWcfBucketService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class BucketServiceClient : System.ServiceModel.ClientBase<BurnWebApp.WcfProxy.IBucketService>, BurnWebApp.WcfProxy.IBucketService {
+    public partial class WcfBucketServiceClient : System.ServiceModel.ClientBase<BurnWebApp.WcfBucketProxy.IWcfBucketService>, BurnWebApp.WcfBucketProxy.IWcfBucketService {
         
-        public BucketServiceClient() {
+        public WcfBucketServiceClient() {
         }
         
-        public BucketServiceClient(string endpointConfigurationName) : 
+        public WcfBucketServiceClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public BucketServiceClient(string endpointConfigurationName, string remoteAddress) : 
+        public WcfBucketServiceClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public BucketServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public WcfBucketServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public BucketServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public WcfBucketServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
-        public string GetData(int value) {
-            return base.Channel.GetData(value);
-        }
-        
-        public System.Threading.Tasks.Task<string> GetDataAsync(int value) {
-            return base.Channel.GetDataAsync(value);
-        }
-        
-        public BurnWebApp.WcfProxy.Bucket GetDataUsingDataContract(int size) {
+        public BurnWebApp.WcfBucketProxy.Bucket GetDataUsingDataContract(int size) {
             return base.Channel.GetDataUsingDataContract(size);
         }
         
-        public System.Threading.Tasks.Task<BurnWebApp.WcfProxy.Bucket> GetDataUsingDataContractAsync(int size) {
+        public System.Threading.Tasks.Task<BurnWebApp.WcfBucketProxy.Bucket> GetDataUsingDataContractAsync(int size) {
             return base.Channel.GetDataUsingDataContractAsync(size);
         }
     }

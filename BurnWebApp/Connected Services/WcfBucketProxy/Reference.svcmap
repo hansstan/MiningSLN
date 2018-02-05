@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0437371e-5172-4d26-9292-f3c2120bf36e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:53378/WcfBucketService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WcfBucketService.wsdl" MetadataType="Wsdl" ID="0cde92e8-3521-45e5-a372-4130625000cc" SourceId="1" SourceUrl="http://localhost:53378/WcfBucketService.svc?wsdl" />
+    <MetadataFile FileName="WcfBucketService.xsd" MetadataType="Schema" ID="0c29155d-0438-458d-9e84-ff5d39ae53ff" SourceId="1" SourceUrl="http://localhost:53378/WcfBucketService.svc?xsd=xsd1" />
+    <MetadataFile FileName="WcfBucketService1.xsd" MetadataType="Schema" ID="b865a3c3-810d-4ee8-9fe3-66b301f21c0a" SourceId="1" SourceUrl="http://localhost:53378/WcfBucketService.svc?xsd=xsd0" />
+    <MetadataFile FileName="WcfBucketService2.xsd" MetadataType="Schema" ID="2f9521fe-835a-4ec6-8b26-22bbd3320c8a" SourceId="1" SourceUrl="http://localhost:53378/WcfBucketService.svc?xsd=xsd2" />
+    <MetadataFile FileName="WcfBucketService.disco" MetadataType="Disco" ID="e8938e1a-8392-4bc2-9597-18fb81552f33" SourceId="1" SourceUrl="http://localhost:53378/WcfBucketService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

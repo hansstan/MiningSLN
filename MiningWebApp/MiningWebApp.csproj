@@ -26,6 +26,7 @@
     </NuGetPackageImportStamp>
     <ApplicationInsightsResourceId>/subscriptions/f003fed3-0fe5-49c7-a17d-b1dae27962a7/resourcegroups/rg-MiningWebAppInsight/providers/microsoft.insights/components/MiningWebApp</ApplicationInsightsResourceId>
     <ApplicationInsightsAnnotationResourceId>/subscriptions/f003fed3-0fe5-49c7-a17d-b1dae27962a7/resourcegroups/rg-MiningWebAppInsight/providers/microsoft.insights/components/MiningWebApp</ApplicationInsightsAnnotationResourceId>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -108,6 +109,8 @@
       <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.4.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -153,6 +156,7 @@
     <Content Include="Scripts\jquery-1.6.4.min.js" />
     <Content Include="Scripts\jquery.signalR-2.2.2.js" />
     <Content Include="Scripts\jquery.signalR-2.2.2.min.js" />
+    <Content Include="WcfBucketService.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -173,12 +177,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="IWcfBucketService.cs" />
     <Compile Include="Models\MiningData.cs" />
     <Compile Include="MySoapService.asmx.cs">
       <DependentUpon>MySoapService.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WcfBucketService.svc.cs">
+      <DependentUpon>WcfBucketService.svc</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -83,13 +83,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\WcfProxy\BucketService.disco" />
-    <Content Include="Connected Services\WcfProxy\BurnWebApp.WcfProxy.Bucket.datasource">
+    <Content Include="Connected Services\WcfBucketProxy\BurnWebApp.WcfBucketProxy.Bucket.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <None Include="Connected Services\WcfProxy\configuration91.svcinfo" />
-    <None Include="Connected Services\WcfProxy\configuration.svcinfo" />
-    <None Include="Connected Services\WcfProxy\Reference.svcmap">
+    <None Include="Connected Services\WcfBucketProxy\WcfBucketService.disco" />
+    <None Include="Connected Services\WcfBucketProxy\configuration91.svcinfo" />
+    <None Include="Connected Services\WcfBucketProxy\configuration.svcinfo" />
+    <None Include="Connected Services\WcfBucketProxy\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -99,7 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Connected Services\WcfProxy\Reference.cs">
+    <Compile Include="Connected Services\WcfBucketProxy\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -118,16 +118,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\WcfProxy\BucketService.xsd">
+    <None Include="Connected Services\WcfBucketProxy\WcfBucketService.wsdl" />
+    <None Include="Connected Services\WcfBucketProxy\WcfBucketService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\WcfProxy\BucketService1.xsd">
+    <None Include="Connected Services\WcfBucketProxy\WcfBucketService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\WcfProxy\BucketService2.xsd">
+    <None Include="Connected Services\WcfBucketProxy\WcfBucketService2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\WcfProxy\Service1.wsdl" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\BurnWebApp-Stanglmayr - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
@@ -144,7 +144,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\WcfProxy\" />
+    <WCFMetadataStorage Include="Connected Services\WcfBucketProxy\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

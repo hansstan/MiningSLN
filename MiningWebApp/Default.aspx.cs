@@ -11,7 +11,7 @@ namespace MiningWebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            lblStatus.Text = DateTime.Now.ToString("HH:mm:ss");
         }
     }
 }

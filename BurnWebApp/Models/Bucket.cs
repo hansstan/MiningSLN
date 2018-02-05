@@ -1,13 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.Runtime.Serialization;
 
 namespace BurnWebApp.Models
 {
+    [DataContract]
     public class Bucket
     {
+        [DataMember]
         public int    id;
+        [DataMember]
         public byte[] Coal;
 
         public Bucket(long bucketSize)

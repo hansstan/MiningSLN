@@ -9,6 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <h1>Mining Server</h1>
+        <asp:Label ID="lblStatus" Text="" runat="server" />
     </form>
 </body>
 </html>

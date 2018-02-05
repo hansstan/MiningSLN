@@ -36,7 +36,8 @@ namespace BurnWebApp
         {
             long byteCount = long.Parse(txtByteCount.Text);
             long count = long.Parse(txtCount.Text);
-            GetBucketDataViaWcf("http://wcfbucketcloudservice.cloudapp.net/BucketService.svc", byteCount, count);
+            GetBucketDataViaWcf("http://miningwebapp-stanglmayr.azurewebsites.net/WcfBucketService.svc", byteCount, count);
+            //GetBucketDataViaWcf("net.tcp://wcfbucketcloudservice.cloudapp.net/BucketService.svc", byteCount, count);
         }
 
         private void GetBucketData(string url, long byteCount, long count)
@@ -55,13 +56,13 @@ namespace BurnWebApp
 
         private void GetBucketDataViaWcf(string url, long byteCount, long count)
         {
-            var wcfClient = new WcfProxy.BucketServiceClient();
+            var wcfClient = new WcfBucketProxy.WcfBucketServiceClient();
             wcfClient.Endpoint.Address = new EndpointAddress(url);
-            
+
             DateTime dtStart = DateTime.Now;
             for (int i = 0; i < count; i++)
             {
-                var bucket = wcfClient.GetData((int) byteCount);
+                var bucket = wcfClient.GetDataUsingDataContract((int)byteCount);
             }
             var elapsed = (DateTime.Now - dtStart).TotalMilliseconds;
             lblStatus.Text = $"WCF: Total-MS: {elapsed}";
